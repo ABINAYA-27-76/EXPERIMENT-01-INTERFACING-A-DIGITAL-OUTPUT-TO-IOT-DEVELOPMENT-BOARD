@@ -96,7 +96,6 @@ With its power-efficient design, built-in LoRaWAN support, and flexible communic
 ## STM 32 CUBE PROGRAM
 
 ```
-
 #include "main.h"
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
@@ -110,7 +109,6 @@ int main(void)
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
     HAL_Delay(4000);
   }
-
 }
 void SystemClock_Config(void)
 {
@@ -159,14 +157,11 @@ void Error_Handler(void)
   {
   }
 }
-
 #ifdef  USE_FULL_ASSERT
 void assert_failed(uint8_t *file, uint32_t line)
-{
- 
+{ 
 }
 #endif 
-
 ```
 
 ## OUTPUT
